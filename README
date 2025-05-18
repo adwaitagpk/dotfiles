@@ -1,0 +1,5 @@
+# 🏠 Adwaita's MacOS dotfiles
+
+To install these dotfiles you need to have `stow` installed.
+
+Clone the directory and run `stow --dotfiles .`
