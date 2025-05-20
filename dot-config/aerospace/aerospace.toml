@@ -25,9 +25,17 @@ automatically-unhide-macos-hidden-apps = true
     outer.right = 2
     outer.top = 2
 
+[workspace-to-monitor-force-assignment]
+    A = 2
+    Z = 2
+
 [mode.main.binding]
     cmd-h = []
     cmd-alt-h = []
+
+    alt-shift-c = 'reload-config'
+    alt-shift-space = 'layout floating tiling'
+    alt-shift-r = 'flatten-workspace-tree'
 
     alt-enter = '''exec-and-forget osascript -e '
     tell application "Terminal"
@@ -61,6 +69,9 @@ automatically-unhide-macos-hidden-apps = true
     alt-7 = 'workspace 7'
     alt-8 = 'workspace 8'
     alt-9 = 'workspace 9'
+    alt-0 = 'workspace 10'
+    alt-a = 'workspace A'
+    alt-z = 'workspace Z'
 
     alt-shift-1 = 'move-node-to-workspace 1'
     alt-shift-2 = 'move-node-to-workspace 2'
@@ -71,10 +82,7 @@ automatically-unhide-macos-hidden-apps = true
     alt-shift-7 = 'move-node-to-workspace 7'
     alt-shift-8 = 'move-node-to-workspace 8'
     alt-shift-9 = 'move-node-to-workspace 9'
+    alt-shift-0 = 'move-node-to-workspace 10'
+    alt-shift-a = 'move-node-to-workspace A'
+    alt-shift-z = 'move-node-to-workspace Z'
 
-    alt-shift-semicolon = 'mode service'
-
-[mode.service.binding]
-    esc = ['reload-config', 'mode main']
-    r = ['flatten-workspace-tree', 'mode main']
-    f = ['layout floating tiling', 'mode main']
